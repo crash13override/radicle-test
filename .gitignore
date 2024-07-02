@@ -11,6 +11,7 @@ public/dist/*
 
 .idea
 composer.lock
+yarn.lock
 
 # WordPress
 public/wp
