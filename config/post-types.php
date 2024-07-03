@@ -23,6 +23,16 @@ return [
                 'slug' => 'seeds',
             ]
         ],
+        'grandprix' => [
+            'menu_icon' => 'dashicons-car',
+            'supports' => ['title', 'editor', 'author', 'revisions', 'thumbnail'],
+            'show_in_rest' => true,
+            'names' => [
+                'singular' => 'Grand Prix',
+                'plural' => 'Grand Prix',
+                'slug' => 'grand-prix',
+            ]
+        ],
     ],
 
     /*
@@ -42,6 +52,14 @@ return [
             'names' => [
                 'singular' => 'Category',
                 'plural' => 'Categories',
+            ],
+        ],
+        'gp_category' => [
+            'post_types' => ['grandprix'],
+            'meta_box' => 'radio',
+            'names' => [
+                'singular' => 'GP Category',
+                'plural' => 'GP Categories',
             ],
         ],
     ],
